@@ -1,0 +1,82 @@
+{
+  "preprocessing": {
+    "rows_loaded": 6015,
+    "missing_before": {
+      "temperature": 120,
+      "humidity": 121,
+      "occupancy": 120
+    },
+    "duplicates_removed": 15,
+    "high_usage_threshold_kwh": 823.19,
+    "rows_after_cleaning": 6000
+  },
+  "regression": {
+    "Linear Regression": {
+      "R2": 0.9123328674482849,
+      "MAE": 92.65486281337537,
+      "RMSE": 120.92809978016389
+    },
+    "Random Forest Regressor": {
+      "R2": 0.957845405173445,
+      "MAE": 56.26278502466584,
+      "RMSE": 83.8554487531721
+    }
+  },
+  "classification": {
+    "Logistic Regression": {
+      "Accuracy": 0.9433333333333334,
+      "Precision": 0.9213197969543148,
+      "Recall": 0.9075,
+      "F1": 0.9143576826196473
+    },
+    "Decision Tree": {
+      "Accuracy": 0.9275,
+      "Precision": 0.8807785888077859,
+      "Recall": 0.905,
+      "F1": 0.8927250308261405
+    },
+    "Random Forest Classifier": {
+      "Accuracy": 0.955,
+      "Precision": 0.9303482587064676,
+      "Recall": 0.935,
+      "F1": 0.9326683291770573
+    }
+  },
+  "confusion_matrices": {
+    "Logistic Regression": [
+      [
+        769,
+        31
+      ],
+      [
+        37,
+        363
+      ]
+    ],
+    "Decision Tree": [
+      [
+        751,
+        49
+      ],
+      [
+        38,
+        362
+      ]
+    ],
+    "Random Forest Classifier": [
+      [
+        772,
+        28
+      ],
+      [
+        26,
+        374
+      ]
+    ]
+  },
+  "train_test_sizes": {
+    "total": 6000,
+    "train": 4800,
+    "test": 1200
+  }
+}

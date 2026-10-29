@@ -1,0 +1,35 @@
+=== MongoDB queries ===
+Total documents: 6015
+Documents with missing temperature: 120
+Weekend documents: 1743
+High consumption (> 1500 kWh): 201
+
+Sample document:
+{'record_id': 3684, 'building_id': 'B015', 'building_type': 'Hospital', 'floor_area': 4238.0, 'year_built': 1982, 'timestamp': datetime.datetime(2025, 1, 1, 1, 0), 'temperature': 10.36, 'humidity': 78.5, 'wind_speed': 7.5, 'solar_radiation': 0.0, 'weather_condition': 'Cloudy', 'occupancy': 185.0, 'is_weekend': 0, 'energy_kwh': 844.81, 'hour': 1, 'month': 1, 'day_of_week': 2}
+
+Average energy (kWh) by building type:
+  Retail       avg=   848.1  n=1253
+  Hospital     avg=   783.9  n=1003
+  Office       avg=   648.7  n=1254
+  Residential  avg=   638.5  n=1251
+  School       avg=   477.9  n=1254
+
+Average energy by weather condition:
+  Clear    avg=   832.9
+  Cloudy   avg=   651.6
+  Rainy    avg=   616.7
+  Foggy    avg=   583.6
+
+Average energy by hour of day (top 5 peak hours):
+  hour 14  avg=   947.9
+  hour 13  avg=   932.5
+  hour 12  avg=   860.8
+  hour 16  avg=   846.8
+  hour 15  avg=   820.7
+
+Top 5 buildings by total consumption:
+  B023  total=341,712
+  B020  total=280,876
+  B015  total=273,293
+  B006  total=249,918
+  B011  total=249,039
